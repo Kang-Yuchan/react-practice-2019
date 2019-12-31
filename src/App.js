@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+function Header() {
+  return (
+    <h1>This is Header Component</h1>
+  );
+}
+
+const Heroes = [
+  
+    {
+      name: "Mccree",
+      position: "DPS",
+      type: "Hitscan",
+      hp: 200
+    },
+    {
+      name: "Widow Maker",
+      position: "DPS",
+      type: "Hitscan",
+      hp: 200
+    },
+    {
+      name: "Zarya",
+      position: "Tank",
+      type: "Hitscan",
+      hp: 400
+    }
+  ]
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+      <Header />
+      <p>{Heroes.map(hero => <Heroes name={hero.name}/> )}</p>
+			<p>Hello react!</p>
+		</>
+	);
 }
 
 export default App;
