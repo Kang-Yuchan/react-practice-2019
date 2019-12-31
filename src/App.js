@@ -1,30 +1,29 @@
 import React from 'react';
 
+
 function Header() {
   return (
     <h1>This is Header Component</h1>
-  );
+    );
 }
 
-const Heroes = [
+function Food ({fav, nation}) {
+  return <h1>I like {fav}. This is from {nation}</h1>
+}
+
+const favFoods = [
   
     {
-      name: "Mccree",
-      position: "DPS",
-      type: "Hitscan",
-      hp: 200
+      name: "Kimchi",
+      nation: "Korea"
     },
     {
-      name: "Widow Maker",
-      position: "DPS",
-      type: "Hitscan",
-      hp: 200
+      name: "Sushi",
+      nation: "Japan"
     },
     {
-      name: "Zarya",
-      position: "Tank",
-      type: "Hitscan",
-      hp: 400
+      name: "Pasta",
+      nation: "Italy"
     }
   ]
 
@@ -33,8 +32,8 @@ function App() {
 	return (
 		<>
       <Header />
-      <p>{Heroes.map(hero => <Heroes name={hero.name}/> )}</p>
 			<p>Hello react!</p>
+      {favFoods.map(food => <Food fav={food.name} nation={food.nation}/>)}
 		</>
 	);
 }
