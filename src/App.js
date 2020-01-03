@@ -1,62 +1,39 @@
 import React from 'react';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
+class App extends React.Component {
+  constructor(prop) {
+    super(prop)
+    console.log("constructor");
+  }
+	state = {
+		count: 0
+  };
+  add = () => {
+    this.setState(i => ({ count: i.count+1 }))
+  }
 
-function Header() {
-  return (
-    <h1>This is Header Component</h1>
-    );
-}
-
-function Food ({fav, nation, rating}) {
-  return (
-    <>
-      <h1>I like {fav}. This is from {nation}</h1>
-      <h2>This food's rating is {rating}/5.</h2>
+  minus = () => {
+    this.setState(i => ({ count: i.count-1 }))
+  }
+	render() {
+    console.log("render");
+    return (
+      <>
+    <h1>This number is: {this.state.count}</h1>
+    <button onClick={this.add}>+</button>
+    <button onClick={this.minus}>-</button>
     </>
-  )
-}
-
-Food.propTypes = {
-  fav: PropTypes.string.isRequired,
-  nation: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired
-}
-
-const favFoods = [
-  
-    {
-      id: 1,
-      name: "Kimchi",
-      nation: "Korea",
-      rating: 5
-    },
-    {
-      id: 2,
-      name: "Sushi",
-      nation: "Japan",
-      rating: 5
-    },
-    {
-      id: 3,
-      name: "Pasta",
-      nation: "Italy",
-      rating: 4
+    )}
+    componentDidMount() {
+      console.log("componentDidMount");
     }
-  ]
+    componentDidUpdate(){
+      console.log("componentDidUpdate")
+    }
+    componentWillUnmount() {
+      console.log("componentWillUnmount")
+    }
+  }
   
-
-function App() {
-	return (
-		<>
-      <Header />
-      {favFoods.map(dish => <Food 
-      key={dish.id} 
-      fav={dish.name} 
-      nation= {dish.nation} 
-      rating= {dish.rating} />)}
-    </>
-	);
-}
-
-export default App;
+  export default App;
