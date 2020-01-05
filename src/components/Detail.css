@@ -1,0 +1,44 @@
+.detail {
+	display: flex;
+	margin-top: 5vh;
+	width: 100vh;
+	margin-left: 20vh;
+}
+
+.detail__data {
+	margin-left: 5vh;
+}
+
+.detail__title {
+	margin-top: 0px;
+	font-size: 3.5vh;
+}
+
+.detail__genres {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	margin: 5px 0px;
+}
+
+.detail__year {
+	font-size: 1.8vh;
+}
+
+.detail li {
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.detail img {
+	width: 40vh;
+	height: 65vh;
+	box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+		0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.detail__summary {
+	display: flex;
+	flex-wrap: wrap;
+}
