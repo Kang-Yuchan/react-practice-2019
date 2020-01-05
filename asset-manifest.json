@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-practice-2019/static/css/main.721d34be.chunk.css",
+    "main.js": "/react-practice-2019/static/js/main.739733be.chunk.js",
+    "main.js.map": "/react-practice-2019/static/js/main.739733be.chunk.js.map",
+    "runtime-main.js": "/react-practice-2019/static/js/runtime-main.7b95f01e.js",
+    "runtime-main.js.map": "/react-practice-2019/static/js/runtime-main.7b95f01e.js.map",
+    "static/js/2.1d6ffba2.chunk.js": "/react-practice-2019/static/js/2.1d6ffba2.chunk.js",
+    "static/js/2.1d6ffba2.chunk.js.map": "/react-practice-2019/static/js/2.1d6ffba2.chunk.js.map",
+    "index.html": "/react-practice-2019/index.html",
+    "precache-manifest.bce3deaa80f90ee553054e1642951821.js": "/react-practice-2019/precache-manifest.bce3deaa80f90ee553054e1642951821.js",
+    "service-worker.js": "/react-practice-2019/service-worker.js",
+    "static/css/main.721d34be.chunk.css.map": "/react-practice-2019/static/css/main.721d34be.chunk.css.map",
+    "static/js/2.1d6ffba2.chunk.js.LICENSE": "/react-practice-2019/static/js/2.1d6ffba2.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b95f01e.js",
+    "static/js/2.1d6ffba2.chunk.js",
+    "static/css/main.721d34be.chunk.css",
+    "static/js/main.739733be.chunk.js"
+  ]
+}
